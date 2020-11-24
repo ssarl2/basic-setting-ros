@@ -11,6 +11,7 @@ find_package(catkin REQUIRED)
 
 set(CATKIN_DEPS
     roscpp
+    tf
 )
 
 find_package(catkin REQUIRED COMPONENTS ${CATKIN_DEPS})
