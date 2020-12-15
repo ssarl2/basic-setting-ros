@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <package format="2">
     <name>package_name</name>
-    <version>0.0.0</version>
+    <version>1.0.0</version>
     <description>The package_name package</description>
 
     <maintainer email="hyunbin.park@email.com">Hyunbin Park</maintainer>
-    <license></license>
+    <license>HBP</license>
 
     <depend>roscpp</depend>
-    <depend>tf</depend>
 
     <buildtool_depend>catkin</buildtool_depend>
 

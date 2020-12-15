@@ -11,13 +11,12 @@ find_package(catkin REQUIRED)
 
 set(CATKIN_DEPS
     roscpp
-    tf
 )
 
 find_package(catkin REQUIRED COMPONENTS ${CATKIN_DEPS})
 
 catkin_package(
-    INCLUDE_DIRS include
+    # INCLUDE_DIRS include
     LIBRARIES ${PROJECT_NAME}
     CATKIN_DEPENDS ${CATKIN_DEPS}
     # DEPENDS system_lib
@@ -30,7 +29,6 @@ include_directories(
 
 set(SOURCE
     src/main.cpp
-    src/change.cpp
 )
 
 set(LIBS

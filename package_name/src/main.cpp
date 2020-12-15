@@ -9,16 +9,16 @@ int main(int argc, char** argv)
     ros::init (argc, argv, "talker");
     ros::NodeHandle n("~");
 
-    std::string str;
-    n.getParam("test_1", str);
+    std::string output_topic;
+    n.getParam("output_topic", output_topic);
 
-    ros::Publisher pub = n.advertise<std_msgs::String>("/happy", 1);
+    ros::Publisher pub = n.advertise<std_msgs::String>(output_topic, 1);
 
     ros::Rate loop_rate(10);
     while (n.ok())
     {
         std_msgs::String msg;
-        msg.data = str;
+        msg.data = "Hi";
 
         ROS_INFO("%s", msg.data.c_str());
 

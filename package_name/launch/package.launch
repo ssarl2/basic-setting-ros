@@ -1,7 +1,7 @@
 <launch>
-    <arg name="Test1" default="Hi"/>
+    <arg name="output_topic" default="/talker"/>
 
     <node pkg="package_name" type="package_name" name="package_name" output="screen">
-        <param name="test_1" value="$(arg Test1)"/>
+        <param name="output_topic" value="$(arg output_topic)"/>
     </node>
 </launch>
