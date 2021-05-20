@@ -13,6 +13,7 @@
 ## Environment
 - Ubuntu 18.04 bionic
 - ROS melodic version
+  - Install - [`cd scripts`](https://github.com/ssarl2/basic-setting-ros/tree/master/scripts) and `bash install_ros_melodic.sh`
 
 ## Dependencies
 - ROS
